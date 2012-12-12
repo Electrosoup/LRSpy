@@ -3,12 +3,14 @@ import sys, os
 
 version = '0.0'
 
+install_requires = ['SOAPPy', 'elementtree']
+
 setup(name='LRSSpy',
       version=version,
       description="",
       long_description="""\
-""",
-      classifiers=[], # Get strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers
+      """,
+      classifiers=[],
       keywords='',
       author='',
       author_email='',
@@ -17,9 +19,7 @@ setup(name='LRSSpy',
       packages=find_packages(exclude=['ez_setup', 'examples', 'tests']),
       include_package_data=True,
       zip_safe=False,
-      install_requires=[
-          # -*- Extra requirements: -*-
-      ],
+      install_requires=install_requires,
       entry_points="""
       # -*- Entry points: -*-
       """,
